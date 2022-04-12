@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+html {
+    background-color: #be9b6e;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+h1 {
+    background-color: #392714;
+    color: #d4d5d1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2vh 6vw;
+    font-size: 5vh;
+    border-bottom: .25rem solid #d4d5d1;
+    box-sizing: border-box;
+    box-shadow: 0rem 0rem 2rem #392714;
+}
+
+h1 .navBar {
+    display: flex;
+    gap: 3vw;
+}
+
+
+.navBar button {
+    font-family: 'Rubik', sans-serif;
+    background-color: #392714;
+    color: #d4d5d1;
+    border: none;
+    font-size: 3vh;
+}
+
+
+.navBar button.clicked {
+    border-bottom: 3px solid #be9b6e;
+    color: #be9b6e;
+}
+ 
+.navBar button:hover {
+    border-bottom: 3px solid rgb(190, 155, 110, .3);
+    color: rgb(190, 155, 110, .6);
+}
+
+footer {
+    background-color: #392714;
+    color: #d4d5d1;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: .25rem solid #d4d5d1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4vh;
+    height: 10vh;
+    margin-top: auto;
+}
+
+.homeTab {
+    color: #d4d5d1;
+    position: relative;
+    gap: 3rem;
+    background-image: url(./images/larrymain.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #be9b6e;
+    height: 80vh;
+}
+
+.homeTab h2 {
+    padding-bottom: 1.5rem;
+    text-decoration: underline;
+}
+
+.homeTab .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2.5vh;
+    padding: 6vw;
+    background-color: rgb(57, 39, 20, .5);
+    border: .25rem solid #d4d5d1;
+    border-left: none;
+    border-right: none;
+    height: 25%;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menuTab {
+    color: #d4d5d1;
+    margin: 5rem 15rem;
+    padding: 2rem 5rem;
+    background-color: #392714;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    border: .25rem solid #d4d5d1;
+    box-shadow: 0rem 0rem 2rem #392714;
+    border-radius: 15px;
+}
+
+.menuTab>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex: 40%;
+    gap: 1rem;
+    border: .25rem solid #d4d5d1;
+    border-radius: 15px;
+}
+
+.menuTab h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    flex: 90%;
+    text-decoration: underline;
+}
+
+.menuTab h3 {
+    text-decoration: underline;
+}
+
+.menuTab img {
+    width: 15vw;
+    grid-column: 1;
+    grid-row: 1/3;
+    border-radius: 10px;
+}
+
+.contactTab {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh 25vw;
+    border: .25rem solid #d4d5d1;
+    border-radius: 15px;
+    color: #d4d5d1;
+    background-color: #392714;
+}
+
+.contactTab h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 3vh;
+    width: 80%;
+    text-decoration: underline;
+}
+
+.contactTab .contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3vh;
+}
+
+.contactInfo>div {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.contactTab form {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 5vh;
+    width: 20vw;
+}
+
+.textinput {
+    border-bottom: .125rem solid #d4d5d1;
+}
+
+.textinput::placeholder {
+    color: #d4d5d1;
+}
+
+
+.contactTab textarea {
+    height: 15vh;
+}
+
+.message {
+    padding: .25rem;
+    border: .125rem solid #d4d5d1;
+}
+
+.message::placeholder {
+    color: #d4d5d1;
+}
+
+
+/** CSS normalize:
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+ button,
+ input,
+ optgroup,
+ select,
+ textarea {
+   font-family: inherit; /* 1 */
+   font-size: 100%; /* 1 */
+   line-height: 1.15; /* 1 */
+   margin: 0; /* 2 */
+ }
+ 
+ /**
+  * Show the overflow in IE.
+  * 1. Show the overflow in Edge.
+  */
+ 
+ button,
+ input { /* 1 */
+   overflow: visible;
+ }
+ 
+ /**
+  * Remove the inheritance of text transform in Edge, Firefox, and IE.
+  * 1. Remove the inheritance of text transform in Firefox.
+  */
+ 
+ button,
+ select { /* 1 */
+   text-transform: none;
+ }
+ 
+ /**
+  * Correct the inability to style clickable types in iOS and Safari.
+  */
+ 
+ button,
+ [type="button"],
+ [type="reset"],
+ [type="submit"] {
+   -webkit-appearance: button;
+ }
+
+input,
+textarea {
+    all:unset;
+}
